@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Dialog的styles  继承父styles 的 Theme.Dialog-->
+    <style name="myDialog" parent="@android:style/Theme.Dialog">
+    <!-- Dialog的windowFrame框为无-->
+    <item name="android:windowFrame">@null</item>
+    <!--是否悬浮在Activity上面-->
+    <item name="android:windowIsFloating">true</item>
+    <!--是否半透明-->
+    <item name="android:windowIsTranslucent">true</item>
+    <!--设置dialog的背景-->
+    <item name="android:colorBackground">@android:color/transparent</item>
+    <!--设置是否模糊-->
+    <item name="android:backgroundDimEnabled">true</item>
+    <!--Dialog是否显示title-->
+    <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog_default_animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_scal_anmi_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_anim_out</item>
+    </style>
+
+    <style name="dialog_from_bottom_animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_from_bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_from_bottom_anim_out</item>
+    </style>
+
+</resources>
